@@ -138,7 +138,7 @@ function App() {
 							sm={1}
 							md={2}
 							lg={2}
-							xlg={3}
+							xxl={3}
 							className="p-4 gy-4"
 						>
 							{filteredAndSortedSongs.map((song) => (

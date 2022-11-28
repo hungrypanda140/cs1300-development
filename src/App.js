@@ -14,6 +14,7 @@ function App() {
 		new Set(["All"])
 	);
 
+	// Callback function that runs when a sort radio button is checked
 	const onSelectSort = (e) => {
 		// The sort option that was selected can be found via the event target's ID
 		const sort = e.target.id;

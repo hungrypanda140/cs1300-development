@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./App.css";
 import songsData from "./assets/songs-data.json";
 import SongItem from "./components/SongItem";
+import HeaderSection from "./components/HeaderSection";
 import SortsAndFiltersSection from "./components/SortsAndFiltersSection";
 import PlaylistSection from "./components/PlaylistSection";
-import { Image, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 function App() {
 	const [playlist, setPlaylist] = useState({});
@@ -14,7 +15,6 @@ function App() {
 		new Set(["All"])
 	);
 
-	// Callback function that runs when a sort radio button is checked
 	const onSelectSort = (e) => {
 		// The sort option that was selected can be found via the event target's ID
 		const sort = e.target.id;
@@ -117,15 +117,7 @@ function App() {
 	return (
 		<div className="App d-flex">
 			<div className="main-container p-2">
-				<div className="d-flex align-items-center py-3 px-4 gap-1">
-					{/* Citation: This 3D logo was found at this link: https://www.figma.com/community/file/1030350068466019692 */}
-					<Image
-						className="header-img"
-						src="images/logo.png"
-						alt="Playlist Pal logo"
-					/>
-					<span className="header-title">Playlist Pal</span>
-				</div>
+				<HeaderSection />
 				<Row>
 					<Col
 						xs={3}

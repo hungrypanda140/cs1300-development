@@ -1,38 +1,75 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100vw;
+  background-color:#282828;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container {
+  border-right: 2px solid #505050;
+  width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playlist-container {
+  width: 30%;
+}
+
+.dot-icon {
+  color: white;
+  margin-top: 0.1rem;
+}
+
+.filter-container {
+  border: 2px solid #505050;
+  border-radius: 0.5rem;
+  height: fit-content;
+}
+
+.header-img {
+  width: 2.5rem;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.card {
+  border: none!important;
+  height: 100%;
+}
+
+.card-body {
+  background: linear-gradient(180deg, rgba(239,75,84,1) 0%, rgba(212,11,33,1) 100%);
+  border-bottom-left-radius: var(--bs-card-inner-border-radius);
+  border-bottom-right-radius: var(--bs-card-inner-border-radius);
+}
+
+.card-body span {
+  font-weight: 500;
+}
+
+.card-img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-text {
+  font-size: small;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.list-group-item {
+  border-radius: 0!important;
+  background-color: #282828;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #505050;
+  border-right: none;
+  border-left: none;
+}
+
+.list-group-item:last-child {
+  border-radius: 0;
 }

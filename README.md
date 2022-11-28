@@ -32,3 +32,7 @@ The value of this application is that it streamlines the process of creating pla
 The primary state changes occur in `SortsAndFiltersSection.js` and `SongItem.js`:
 - `SortsAndFilters.js` fires various callback functions that it receives as props from `App.js`. These callback functions handle the important logic of updating the state values for which sorts and filters are selected. There is some added complexity with this due to the inclusion of "All" as a category for the filters, which leads to some extra logic for unchecking "All" when any other individual checkbox is selected and unchecking all other checkboxes when "All" is clicked.
 - `SongItem.js` triggers state changes to the `playlist` object whenever the user clicks the "Add to Playlist" or "Remove from Playlist" button to toggle the song's membership in the playlist.
+
+### Citations
+- I've included some citations for a helper function that I adapted for use in my code as well as the 3D logo and the Spotify embed components.
+- I also want to cite Bootstrap 5, `react-bootstrap`, `react-icons`, and `@hedgedoc/html-to-react` as component libraries and packages that I used.
